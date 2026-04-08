@@ -34,9 +34,9 @@ Python에서 리스트를 만들 때 사용하는 기호는?
 
 | 나는... | 내 가이드 |
 |---------|---------|
-| 이동규 (quiz.py 담당) | [가이드-학생A-quiz.md](docs/가이드-학생A-quiz.md) |
+| 이동규 (quiz.py 담당) | [가이드-이동규-quiz.md](docs/가이드-이동규-quiz.md) |
 | 학생 B (data.py 담당) | [가이드-학생B-data.md](docs/가이드-학생B-data.md) |
-| 박성재 (score.py 담당) | [가이드-학생C-score.md](docs/가이드-학생C-score.md) |
+| 박성재 (score.py 담당) | [가이드-박성재-score.md](docs/가이드-박성재-score.md) |
 | 학생 D (main.py 담당) | [가이드-학생D-main.md](docs/가이드-학생D-main.md) |
 
 ---
@@ -68,9 +68,9 @@ baekyang-highschool-circle-project/
 │   ├── test_data.py
 │   └── test_score.py
 └── docs/
-    ├── 가이드-학생A-quiz.md
+    ├── 가이드-이동규-quiz.md
     ├── 가이드-학생B-data.md
-    ├── 가이드-학생C-score.md
+    ├── 가이드-박성재-score.md
     └── 가이드-학생D-main.md
 ```
 

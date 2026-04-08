@@ -30,6 +30,17 @@ Python에서 리스트를 만들 때 사용하는 기호는?
 
 ---
 
+## 내 가이드 바로 가기
+
+| 나는... | 내 가이드 |
+|---------|---------|
+| 학생 A (quiz.py 담당) | [가이드-학생A-quiz.md](docs/가이드-학생A-quiz.md) |
+| 학생 B (data.py 담당) | [가이드-학생B-data.md](docs/가이드-학생B-data.md) |
+| 학생 C (score.py 담당) | [가이드-학생C-score.md](docs/가이드-학생C-score.md) |
+| 학생 D (main.py 담당) | [가이드-학생D-main.md](docs/가이드-학생D-main.md) |
+
+---
+
 ## 역할 분담
 
 | 학생 | 담당 파일 | 역할 | 배울 개념 |

@@ -42,7 +42,7 @@ data.py  ←  학생 B가 만드는 "문제 창고"
   ↓ 문제 출제
 quiz.py  ←  이동규(나!)가 만드는 "출제관"
   ↓ 점수 저장
-score.py ←  학생 C가 만드는 "기록관"
+score.py ←  박성재가 만드는 "기록관"
 ```
 
 ### 내 역할
@@ -103,9 +103,25 @@ code .
 
 ---
 
-## 1단계: Codespaces에서 브랜치 만들기
+## 1단계: 선생님 저장소 연결하기 (처음 한 번만)
 
-> 개인 컴퓨터라면 위 섹션에서 이미 완료했어요. 2단계로 넘어가세요.
+Codespace 터미널에서 아래 명령어를 실행해요:
+
+```bash
+git remote add upstream https://github.com/kwt052/baekyang-highschool-circle-project.git
+```
+
+이후 선생님이 코드를 업데이트하면 이렇게 받아와요:
+
+```bash
+git pull upstream main
+```
+
+---
+
+## 2단계: Codespaces에서 브랜치 만들기
+
+> 개인 컴퓨터라면 위 섹션에서 이미 완료했어요. 3단계로 넘어가세요.
 
 AI에게 이렇게 말해요:
 
@@ -115,7 +131,7 @@ AI가 브랜치를 만들고, 지금 상황이 어떤지 설명해줄 거예요.
 
 ---
 
-## 2단계: quiz.py 열기
+## 3단계: quiz.py 열기
 
 왼쪽 파일 탐색기에서 `quiz.py` 를 클릭하면 편집기가 열려요.
 
@@ -138,7 +154,7 @@ def check_answer(user_input, answer):
 
 ---
 
-## 3단계: 코드 채우기
+## 4단계: 코드 채우기
 
 ### 코드 작성 전, 한국어로 먼저 생각해요
 
@@ -182,7 +198,7 @@ ___ 을 돌려준다.
 
 ---
 
-## 4단계: 디버깅 — 내 코드가 맞는지 확인하기
+## 5단계: 디버깅 — 내 코드가 맞는지 확인하기
 
 ### 터미널 여는 법
 
@@ -212,7 +228,7 @@ FAILED tests/test_quiz.py::test_wrong_answer     ← 아직 고쳐야 해요
 
 ---
 
-## 5단계: 저장하고 GitHub에 올리기
+## 6단계: 저장하고 GitHub에 올리기
 
 **Codespaces라면** AI에게 말해요:
 > "지금까지 작업한 거 저장해줘."
@@ -226,7 +242,7 @@ git push origin student-a-quiz
 
 ---
 
-## 6단계: PR 올리기
+## 7단계: PR 올리기
 
 **Codespaces라면** AI에게 말해요:
 > "PR 올려줘."

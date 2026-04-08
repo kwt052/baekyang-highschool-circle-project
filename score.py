@@ -1,5 +1,5 @@
 # score.py
-# 📚 학생 C 담당
+# 📚 박성재 담당
 # 배울 개념: 파일 I/O, 문자열 처리, try-except(예외 처리)
 
 SCORES_FILE = "scores.txt"

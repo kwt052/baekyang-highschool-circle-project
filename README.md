@@ -36,7 +36,7 @@ Python에서 리스트를 만들 때 사용하는 기호는?
 |---------|---------|
 | 이동규 (quiz.py 담당) | [가이드-학생A-quiz.md](docs/가이드-학생A-quiz.md) |
 | 학생 B (data.py 담당) | [가이드-학생B-data.md](docs/가이드-학생B-data.md) |
-| 학생 C (score.py 담당) | [가이드-학생C-score.md](docs/가이드-학생C-score.md) |
+| 박성재 (score.py 담당) | [가이드-학생C-score.md](docs/가이드-학생C-score.md) |
 | 학생 D (main.py 담당) | [가이드-학생D-main.md](docs/가이드-학생D-main.md) |
 
 ---
@@ -47,7 +47,7 @@ Python에서 리스트를 만들 때 사용하는 기호는?
 |------|----------|------|----------|
 | 이동규 | `quiz.py` | 문제 출제 & 정답 확인 | 함수, if문, for문 |
 | 학생 B | `data.py` | 문제 데이터 관리 | 리스트, 딕셔너리, JSON |
-| 학생 C | `score.py` | 점수 저장 & 조회 | 파일 읽기/쓰기 |
+| 박성재 | `score.py` | 점수 저장 & 조회 | 파일 읽기/쓰기 |
 | 학생 D | `main.py` | 메뉴 & 전체 흐름 | 모듈 import, while문 |
 
 ---
@@ -59,7 +59,7 @@ baekyang-highschool-circle-project/
 ├── main.py          # 학생 D — 메뉴 & 전체 흐름
 ├── quiz.py          # 이동규 — 문제 출제 & 정답 확인
 ├── data.py          # 학생 B — 문제 데이터 관리
-├── score.py         # 학생 C — 점수 저장 & 조회
+├── score.py         # 박성재 — 점수 저장 & 조회
 ├── questions.json   # 퀴즈 문제 데이터
 ├── requirements.txt # 필요한 패키지 목록
 ├── tests/

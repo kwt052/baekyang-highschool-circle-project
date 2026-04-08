@@ -41,7 +41,7 @@ data.py  ←  학생 B가 만드는 "문제 창고"
   ↓ 문제 출제
 quiz.py  ←  이동규가 만드는 "출제관"
   ↓ 점수 저장
-score.py ←  학생 C가 만드는 "기록관"
+score.py ←  박성재가 만드는 "기록관"
 ```
 
 ### 내 역할
@@ -106,9 +106,25 @@ code .
 
 ---
 
-## 1단계: Codespaces에서 브랜치 만들기
+## 1단계: 선생님 저장소 연결하기 (처음 한 번만)
 
-> 개인 컴퓨터라면 위 섹션에서 이미 완료했어요. 2단계로 넘어가세요.
+Codespace 터미널에서 아래 명령어를 실행해요:
+
+```bash
+git remote add upstream https://github.com/kwt052/baekyang-highschool-circle-project.git
+```
+
+이후 선생님이 코드를 업데이트하면 이렇게 받아와요:
+
+```bash
+git pull upstream main
+```
+
+---
+
+## 2단계: Codespaces에서 브랜치 만들기
+
+> 개인 컴퓨터라면 위 섹션에서 이미 완료했어요. 3단계로 넘어가세요.
 
 AI에게 이렇게 말해요:
 

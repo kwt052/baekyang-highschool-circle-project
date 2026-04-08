@@ -7,20 +7,23 @@
         "ms-python.python",
         "ms-python.black-formatter",
         "eamodio.gitlens",
-        "github.vscode-pull-request-github",
+        "GitHub.vscode-pull-request-github",
         "visualstudioexptteam.vscodeintellicode",
-        "streetsidesoftware.code-spell-checker"
+        "streetsidesoftware.code-spell-checker",
+        "anthropic.claude-code"
       ],
       "settings": {
         "python.defaultInterpreterPath": "/usr/local/bin/python",
+        "python.alwaysUseUv": true,
         "editor.formatOnSave": true,
         "[python]": {
           "editor.defaultFormatter": "ms-python.black-formatter"
         },
-        "editor.rulers": [88]
+        "editor.rulers": [
+          88
+        ]
       }
     }
   },
-  "postCreateCommand": "pip install -r requirements.txt",
-  "remoteUser": "vscode"
+  "postCreateCommand": "if [ -f requirements.txt ]; then pip install -r requirements.txt; fi && mkdir -p ~/.local/bin && curl -fsSL https://claude.ai/install.sh | bash && grep -qxF 'export PATH=\"$HOME/.local/bin:$PATH\"' ~/.bashrc || echo 'export PATH=\"$HOME/.local/bin:$PATH\"' >> ~/.bashrc"
 }

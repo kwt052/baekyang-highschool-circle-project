@@ -34,7 +34,7 @@ Python에서 리스트를 만들 때 사용하는 기호는?
 
 | 나는... | 내 가이드 |
 |---------|---------|
-| 학생 A (quiz.py 담당) | [가이드-학생A-quiz.md](docs/가이드-학생A-quiz.md) |
+| 이동규 (quiz.py 담당) | [가이드-학생A-quiz.md](docs/가이드-학생A-quiz.md) |
 | 학생 B (data.py 담당) | [가이드-학생B-data.md](docs/가이드-학생B-data.md) |
 | 학생 C (score.py 담당) | [가이드-학생C-score.md](docs/가이드-학생C-score.md) |
 | 학생 D (main.py 담당) | [가이드-학생D-main.md](docs/가이드-학생D-main.md) |
@@ -45,7 +45,7 @@ Python에서 리스트를 만들 때 사용하는 기호는?
 
 | 학생 | 담당 파일 | 역할 | 배울 개념 |
 |------|----------|------|----------|
-| 학생 A | `quiz.py` | 문제 출제 & 정답 확인 | 함수, if문, for문 |
+| 이동규 | `quiz.py` | 문제 출제 & 정답 확인 | 함수, if문, for문 |
 | 학생 B | `data.py` | 문제 데이터 관리 | 리스트, 딕셔너리, JSON |
 | 학생 C | `score.py` | 점수 저장 & 조회 | 파일 읽기/쓰기 |
 | 학생 D | `main.py` | 메뉴 & 전체 흐름 | 모듈 import, while문 |
@@ -57,7 +57,7 @@ Python에서 리스트를 만들 때 사용하는 기호는?
 ```
 baekyang-highschool-circle-project/
 ├── main.py          # 학생 D — 메뉴 & 전체 흐름
-├── quiz.py          # 학생 A — 문제 출제 & 정답 확인
+├── quiz.py          # 이동규 — 문제 출제 & 정답 확인
 ├── data.py          # 학생 B — 문제 데이터 관리
 ├── score.py         # 학생 C — 점수 저장 & 조회
 ├── questions.json   # 퀴즈 문제 데이터
@@ -78,9 +78,42 @@ baekyang-highschool-circle-project/
 
 ## 시작하기
 
-### GitHub Codespaces (크롬북)
+### 1단계 — 저장소 포크 (Fork)
 
-저장소 페이지에서 **Code → Open with Codespaces** 를 클릭하면 바로 시작할 수 있어요.
+> 포크 = 선생님 저장소를 내 GitHub 계정으로 복사하는 것
+
+1. 선생님이 공유한 저장소 링크를 크롬에서 열어요
+2. 오른쪽 위 **Fork** 버튼 클릭
+3. **Create fork** 버튼 클릭
+4. 잠시 기다리면 `내아이디/baekyang-highschool-circle-project` 저장소가 생겨요
+
+---
+
+### 2단계 — Codespace 열기
+
+> Codespace = 크롬북에서 바로 쓰는 온라인 개발 환경
+
+1. 포크된 **내 저장소** 페이지에서 초록색 **`<> Code`** 버튼 클릭
+2. **Codespaces** 탭 클릭
+3. **Create codespace on main** 클릭
+4. 새 탭에서 VS Code가 열리고 환경이 자동으로 설정돼요 (1~2분 소요)
+5. 하단 터미널에서 아래 명령어로 Claude가 설치됐는지 확인해요:
+
+```bash
+claude --version
+```
+
+---
+
+### 3단계 — Claude 로그인
+
+터미널에 아래 명령어를 입력하고 안내에 따라 로그인해요:
+
+```bash
+claude
+```
+
+---
 
 ### 개인 컴퓨터 (Windows / Mac)
 

@@ -1,0 +1,32 @@
+{
+  "name": "백양고 동아리 Python 프로젝트",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  "features": {
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.black-formatter",
+        "eamodio.gitlens",
+        "GitHub.vscode-pull-request-github",
+        "visualstudioexptteam.vscodeintellicode",
+        "streetsidesoftware.code-spell-checker",
+        "anthropic.claude-code"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python",
+        "python.alwaysUseUv": true,
+        "editor.formatOnSave": true,
+        "[python]": {
+          "editor.defaultFormatter": "ms-python.black-formatter"
+        },
+        "editor.rulers": [
+          88
+        ]
+      }
+    }
+  },
+  "postCreateCommand": "if [ -f requirements.txt ]; then pip install -r requirements.txt; fi && mkdir -p ~/.local/bin && curl -fsSL https://claude.ai/install.sh | bash && grep -qxF 'export PATH=\"$HOME/.local/bin:$PATH\"' ~/.bashrc || echo 'export PATH=\"$HOME/.local/bin:$PATH\"' >> ~/.bashrc"
+}

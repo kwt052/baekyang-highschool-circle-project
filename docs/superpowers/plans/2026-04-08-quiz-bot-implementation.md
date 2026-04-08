@@ -32,7 +32,7 @@
 **Files:**
 - Create: `questions.json`
 
-- [ ] **Step 1: questions.json 작성**
+- [x] **Step 1: questions.json 작성**
 
 ```json
 [
@@ -64,12 +64,7 @@
 ]
 ```
 
-- [ ] **Step 2: 커밋**
-
-```bash
-git add questions.json
-git commit -m "chore: 퀴즈 문제 데이터 추가"
-```
+- [x] **Step 2: 커밋**
 
 ---
 
@@ -78,7 +73,7 @@ git commit -m "chore: 퀴즈 문제 데이터 추가"
 **Files:**
 - Create: `quiz.py`
 
-- [ ] **Step 1: quiz.py 쉐도우 코드 작성**
+- [x] **Step 1: quiz.py 쉐도우 코드 작성**
 
 ```python
 # quiz.py
@@ -115,12 +110,7 @@ def ask_question(question, choices, answer):
     pass  # 이 줄을 지우고 코드를 채워보세요!
 ```
 
-- [ ] **Step 2: 커밋**
-
-```bash
-git add quiz.py
-git commit -m "chore: quiz.py 쉐도우 코드 추가 (학생 1용)"
-```
+- [x] **Step 2: 커밋**
 
 ---
 
@@ -129,7 +119,7 @@ git commit -m "chore: quiz.py 쉐도우 코드 추가 (학생 1용)"
 **Files:**
 - Create: `data.py`
 
-- [ ] **Step 1: data.py 쉐도우 코드 작성**
+- [x] **Step 1: data.py 쉐도우 코드 작성**
 
 ```python
 # data.py
@@ -164,12 +154,7 @@ def get_question(questions, index):
     pass  # 이 줄을 지우고 코드를 채워보세요!
 ```
 
-- [ ] **Step 2: 커밋**
-
-```bash
-git add data.py
-git commit -m "chore: data.py 쉐도우 코드 추가 (학생 2용)"
-```
+- [x] **Step 2: 커밋**
 
 ---
 
@@ -178,7 +163,7 @@ git commit -m "chore: data.py 쉐도우 코드 추가 (학생 2용)"
 **Files:**
 - Create: `score.py`
 
-- [ ] **Step 1: score.py 쉐도우 코드 작성**
+- [x] **Step 1: score.py 쉐도우 코드 작성**
 
 ```python
 # score.py
@@ -232,12 +217,7 @@ def display_scores():
     pass  # 이 줄을 지우고 코드를 채워보세요!
 ```
 
-- [ ] **Step 2: 커밋**
-
-```bash
-git add score.py
-git commit -m "chore: score.py 쉐도우 코드 추가 (학생 3용)"
-```
+- [x] **Step 2: 커밋**
 
 ---
 
@@ -246,7 +226,7 @@ git commit -m "chore: score.py 쉐도우 코드 추가 (학생 3용)"
 **Files:**
 - Create: `main.py`
 
-- [ ] **Step 1: main.py 쉐도우 코드 작성**
+- [x] **Step 1: main.py 쉐도우 코드 작성**
 
 ```python
 # main.py
@@ -319,12 +299,7 @@ if __name__ == "__main__":
     main()
 ```
 
-- [ ] **Step 2: 커밋**
-
-```bash
-git add main.py
-git commit -m "chore: main.py 쉐도우 코드 추가 (학생 4용)"
-```
+- [x] **Step 2: 커밋**
 
 ---
 
@@ -336,7 +311,7 @@ git commit -m "chore: main.py 쉐도우 코드 추가 (학생 4용)"
 - Create: `tests/test_data.py`
 - Create: `tests/test_score.py`
 
-- [ ] **Step 1: tests/conftest.py 작성 (경로 설정)**
+- [x] **Step 1: tests/conftest.py 작성 (경로 설정)**
 
 ```python
 # tests/conftest.py
@@ -351,7 +326,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
 os.chdir(os.path.dirname(os.path.dirname(__file__)))
 ```
 
-- [ ] **Step 2: tests/test_quiz.py 작성**
+- [x] **Step 2: tests/test_quiz.py 작성**
 
 ```python
 # tests/test_quiz.py
@@ -406,7 +381,7 @@ def test_ask_question_prints_choices(capsys):
     assert "선택B" in captured.out
 ```
 
-- [ ] **Step 3: tests/test_data.py 작성**
+- [x] **Step 3: tests/test_data.py 작성**
 
 ```python
 # tests/test_data.py
@@ -451,7 +426,7 @@ def test_get_question_correct_index():
     assert q == questions[0]
 ```
 
-- [ ] **Step 4: tests/test_score.py 작성**
+- [x] **Step 4: tests/test_score.py 작성**
 
 ```python
 # tests/test_score.py
@@ -512,55 +487,13 @@ def test_display_scores_no_file(capsys):
     assert "없" in captured.out
 ```
 
-- [ ] **Step 5: 커밋**
-
-```bash
-git add tests/
-git commit -m "test: 선생님 테스트 코드 추가 (학생이 통과시킬 목표)"
-```
+- [x] **Step 5: 커밋**
 
 ---
 
 ## Task 7: GitHub Actions CI
 
-**Files:**
-- Create: `.github/workflows/test.yml`
-
-- [ ] **Step 1: .github/workflows/test.yml 작성**
-
-```yaml
-name: Tests
-
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-
-jobs:
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Python 설정
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-
-      - name: 패키지 설치
-        run: pip install -r requirements.txt
-
-      - name: 테스트 실행
-        run: pytest tests/ -v
-```
-
-- [ ] **Step 2: 커밋**
-
-```bash
-git add .github/
-git commit -m "ci: GitHub Actions 자동 테스트 설정"
-```
+> ~~진행하지 않기로 결정.~~
 
 ---
 

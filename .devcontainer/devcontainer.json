@@ -1,6 +1,9 @@
 {
   "name": "백양고 동아리 Python 프로젝트",
   "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  "features": {
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
   "customizations": {
     "vscode": {
       "extensions": [

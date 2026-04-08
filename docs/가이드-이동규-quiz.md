@@ -251,6 +251,21 @@ git push origin student-a-quiz
 
 PR은 "내 작업을 메인에 합쳐도 될까요?" 라고 요청하는 거예요.
 
+### ⚠️ 중요: PR 방향 확인하기
+
+PR 생성 화면 상단에 이런 설정이 보여요. 반드시 확인하세요!
+
+```
+base repository: kwt052/baekyang-highschool-circle-project  ← 선생님 저장소여야 해요!
+base: main
+
+head repository: 내아이디/baekyang-highschool-circle-project  ← 내 포크
+compare: student-a-quiz
+```
+
+**base repository가 내 포크로 되어 있으면** 선생님 저장소에 반영이 안 돼요.  
+드롭다운을 눌러서 `kwt052/baekyang-highschool-circle-project`로 바꿔주세요.
+
 ---
 
 ## 자주 하는 실수

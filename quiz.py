@@ -4,6 +4,10 @@
 
 
 def check_answer(user_input, answer):
+    if user_input == answer:
+        return True
+    else:
+        return False
     """
     사용자 입력과 정답을 비교합니다.
     반환값: 맞으면 True, 틀리면 False
@@ -16,6 +20,11 @@ def check_answer(user_input, answer):
 
 
 def ask_question(question, choices, answer):
+    print(question)
+    for i in choices:
+        print(i)
+    user_input = input("답을 입력하세요: ")
+    return check_answer(user_input, answer)
     """
     문제를 출력하고 사용자 답을 받아 맞는지 확인합니다.
     반환값: 맞으면 True, 틀리면 False
